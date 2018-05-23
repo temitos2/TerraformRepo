@@ -1,0 +1,7 @@
+- hosts: 127.0.0.1
+  become_method: sudo
+  connection: local
+  gather_facts: yes
+  tasks:
+    - name: run terraform
+      command: sh start.sh
